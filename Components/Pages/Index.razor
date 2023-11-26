@@ -4,54 +4,8 @@
 <PageTitle>Inside Line</PageTitle>
 <RadzenRow Gap="5" RowGap="5">
     <RadzenColumn Size="12">
-        <RadzenText Text="Welcome to the Inside Line" TextStyle="Radzen.Blazor.TextStyle.DisplayH2" TagName="Radzen.Blazor.TagName.Auto"></RadzenText>
-        <RadzenText Text="Your Success Is Our Biggest Priority" TextStyle="Radzen.Blazor.TextStyle.H4" TagName="Radzen.Blazor.TagName.H2" class="mt-5"></RadzenText>
-        <RadzenText Text="With Radzen Blazor Studio, application development is just one-click away." TextStyle="Radzen.Blazor.TextStyle.Body1" TagName="Radzen.Blazor.TagName.Auto" class="mt-4" Style="font-size: 20px; line-height: 24px"></RadzenText>
-        <RadzenText Text="Simple to setup, maintain and update." TextStyle="Radzen.Blazor.TextStyle.Body1" TagName="Radzen.Blazor.TagName.Auto" class="mt-3" Style="font-size: 20px; line-height: 24px"></RadzenText>
-        <RadzenCard Style="margin-top: 40px; padding: 20px 40px 40px;">
-            <RadzenRow>
-                <RadzenColumn Size="12" SizeMD="4">
-                    <RadzenIcon Icon="smart_button" Style="margin-top: 20px; width: 48px; height: 48px; font-size: 48px; color: var(--rz-text-title-color);"></RadzenIcon>
-                    <RadzenText Text="Learn the Fundamentals" TextStyle="Radzen.Blazor.TextStyle.DisplayH6" TagName="Radzen.Blazor.TagName.H3"></RadzenText>
-                    <RadzenLink Text="Docs" Path="https://www.radzen.com/blazor-studio/documentation/" Icon="east" Target="_blank" Style="font-size: 18px"></RadzenLink>
-                    <RadzenLink Text="Videos" Path="https://youtube.com/playlist?list=PLQyJPeb3xHcBij_RbHD__2TOo8Jv5HQVc" Icon="east" Target="_blank" Style="display: block; font-size: 18px"></RadzenLink>
-                </RadzenColumn>
-                <RadzenColumn Size="12" SizeMD="4">
-                    <RadzenIcon Icon="code" Style="margin-top: 20px; width: 48px; height: 48px; font-size: 48px; color: var(--rz-text-title-color);"></RadzenIcon>
-                    <RadzenText Text="Radzen Blazor Components" TextStyle="Radzen.Blazor.TextStyle.DisplayH6" TagName="Radzen.Blazor.TagName.H3"></RadzenText>
-                    <RadzenLink Text="Demos" Path="https://blazor.radzen.com" Icon="east" Target="_blank" Style="font-size: 18px"></RadzenLink>
-                </RadzenColumn>
-                <RadzenColumn Size="12" SizeMD="4">
-                    <RadzenIcon Icon="people_outline" Style="margin-top: 20px; width: 48px; height: 48px; font-size: 48px; color: var(--rz-text-title-color);"></RadzenIcon>
-                    <RadzenText Text="Radzen Community" TextStyle="Radzen.Blazor.TextStyle.DisplayH6" TagName="Radzen.Blazor.TagName.H3"></RadzenText>
-                    <RadzenLink Text="Radzen Blazor Studio Forums" Path="https://forum.radzen.com/c/radzen-blazor-studio/12" Icon="east" Target="_blank" Style="font-size: 18px"></RadzenLink>
-                </RadzenColumn>
-            </RadzenRow>
-        </RadzenCard>
+        <RadzenText Text="Welcome to the Inside Line" TextStyle="Radzen.Blazor.TextStyle.DisplayH2" TagName="Radzen.Blazor.TagName.Auto"></RadzenText>        
     </RadzenColumn>
 </RadzenRow>
-<RadzenRow>
-    <div Class="rz-p-0 rz-p-md-12">
-    <RadzenStack Orientation="Orientation.Horizontal" Gap="0.5rem" AlignItems="AlignItems.Center" Class="rz-p-4 rz-mb-6 rz-border-radius-1" Style="border: var(--rz-grid-cell-border);">
-        <RadzenCheckBox @bind-Value="@smooth" Name="smooth"></RadzenCheckBox>
-        <RadzenLabel Text="Smooth" For="smooth" Class="rz-mr-6"/>
-        <RadzenCheckBox @bind-Value="@showDataLabels" Name="dataLabels"></RadzenCheckBox>
-        <RadzenLabel Text="Show Data Labels" For="dataLabels" />
-    </RadzenStack>
 
-    <RadzenChart>
-        <RadzenAreaSeries Smooth="@smooth" Data="@revenue2019" CategoryProperty="Date" Title="2019" ValueProperty="Revenue" RenderingOrder="1">
-            <RadzenSeriesDataLabels Visible="@showDataLabels" />
-        </RadzenAreaSeries>
-        <RadzenAreaSeries Smooth="@smooth" Data="@revenue2020" CategoryProperty="Date" Title="2020" LineType="LineType.Dashed" ValueProperty="Revenue">
-            <RadzenSeriesDataLabels Visible="@showDataLabels" />
-        </RadzenAreaSeries>
-        <RadzenCategoryAxis Padding="20" Formatter="@FormatAsMonth" />
-        <RadzenValueAxis Formatter="@FormatAsUSD">
-            <RadzenGridLines Visible="true" />
-            <RadzenAxisTitle Text="Revenue in USD" />
-        </RadzenValueAxis>
-    </RadzenChart>
-</div>
-</RadzenRow>
 

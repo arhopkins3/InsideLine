@@ -3,12 +3,14 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Mvc;
 using InsideLine.Models;
+using InsideLine.Services;
 
 namespace InsideLine.Controllers
 {
     [Route("Account/[action]")]
     public partial class AccountController : Controller
     {
+
         public IActionResult Login()
         {
             var redirectUrl = Url.Content("~/");
@@ -33,5 +35,7 @@ namespace InsideLine.Controllers
                 Claims = User.Claims.Select(c => new ApplicationClaim { Type = c.Type, Value = c.Value })
             };
         }
+
+
     }
 }

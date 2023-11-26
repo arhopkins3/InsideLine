@@ -1,12 +1,12 @@
-using Microsoft.JSInterop;
 using Microsoft.AspNetCore.Components;
+using Microsoft.JSInterop;
 using Radzen;
 
 using InsideLine.Services;
 
-namespace InsideLine.Pages
+namespace InsideLine.Components.Pages
 {
-    public partial class Unauthorized
+    public partial class UnregisteredDriver
     {
         [Inject]
         protected IJSRuntime JSRuntime { get; set; }
@@ -28,5 +28,10 @@ namespace InsideLine.Pages
 
         [Inject]
         protected SecurityService Security { get; set; }
+
     }
+
+
+
+
 }

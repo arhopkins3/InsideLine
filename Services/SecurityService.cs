@@ -6,7 +6,7 @@ using Radzen;
 
 using InsideLine.Models;
 
-namespace InsideLine
+namespace InsideLine.Services
 {
     public partial class SecurityService
     {

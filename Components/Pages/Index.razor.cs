@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 using Radzen;
 
+using InsideLine.Services;
+
 namespace InsideLine.Components.Pages
 {
     public partial class Index
